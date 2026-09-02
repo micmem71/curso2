@@ -1,0 +1,30 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#8517
+    [34mall[39m: [
+      [34;4mApp\Models\Post[39;24m {#8494
+        [34mid[39m: [35m1[39m,
+        [34mtitulo[39m: [32m"[39m[32mCambio de horario en barandilla[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mA partir del lunes el turno nocturno inicia a las 21:00 horas para todo el personal operativo.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-26 18:42:31[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:42:31[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#8497
+          [34metiqueta_id[39m: [35m1[39m,
+          [34mpost_id[39m: [35m1[39m,
+        },
+      },
+      [34;4mApp\Models\Post[39;24m {#8496
+        [34mid[39m: [35m1[39m,
+        [34mtitulo[39m: [32m"[39m[32mCambio de horario en barandilla[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mA partir del lunes el turno nocturno inicia a las 21:00 horas para todo el personal operativo.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-26 18:42:31[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:42:31[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+        [34mpivot[39m: [34;4mIlluminate\Database\Eloquent\Relations\Pivot[39;24m {#8518
+          [34metiqueta_id[39m: [35m1[39m,
+          [34mpost_id[39m: [35m1[39m,
+        },
+      },
+    ],
+  }
