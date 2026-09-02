@@ -3,11 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-// app/Models/Post.php
+
 class Post extends Model
 {
-    protected $fillable = ['titulo', 'contenido', 'categoria_id', 'publicado']; 
+    use SoftDeletes;
+    protected $fillable = ['titulo', 'contenido', 'categoria_id', 'publicado', 'user_id']; 
     
 
    protected $casts = ['publicado' => 'boolean'];
@@ -26,4 +30,27 @@ public function scopeDeCategoria($query, $categoriaId)
 {
     return $query->where('categoria_id', $categoriaId);
 }
+public function etiquetas()
+{
+    return $this->belongsToMany(Etiqueta::class);
+    
+}
+protected function resumen(): Attribute
+{
+    return Attribute::get(
+        fn () => Str::limit($this->contenido, 90)
+    );
+}
+public function user()
+{
+    return $this->belongsTo(User::class);
+}
+protected function esNuevo(): Attribute
+{
+    return Attribute::get(fn () =>
+        $this->publicado
+        && $this->created_at->gt(now()->subDays(7))
+    );
+}
+
 }

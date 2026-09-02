@@ -1,0 +1,40 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#7372
+    [34mall[39m: [
+      [34;4mApp\Models\Post[39;24m {#8085
+        [34mid[39m: [35m10[39m,
+        [34mtitulo[39m: [32m"[39m[32mAviso de prueba[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mCreado desde Tinker.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-27 18:55:32[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:55:32[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+      },
+      [34;4mApp\Models\Post[39;24m {#7349
+        [34mid[39m: [35m9[39m,
+        [34mtitulo[39m: [32m"[39m[32mAviso de prueba[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mCreado desde Tinker.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-27 18:54:34[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:54:34[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+      },
+      [34;4mApp\Models\Post[39;24m {#7383
+        [34mid[39m: [35m1[39m,
+        [34mtitulo[39m: [32m"[39m[32mCambio de horario en barandilla[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mA partir del lunes el turno nocturno inicia a las 21:00 horas para todo el personal operativo.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-26 18:42:31[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:42:31[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+      },
+      [34;4mApp\Models\Post[39;24m {#7382
+        [34mid[39m: [35m4[39m,
+        [34mtitulo[39m: [32m"[39m[32mActualización del directorio interno[39m[32m"[39m,
+        [34mcontenido[39m: [32m"[39m[32mRevisa que tu extensión y correo institucional aparezcan correctos en el directorio; los cambios se reportan a sistemas.[39m[32m"[39m,
+        [34mcategoria_id[39m: [35m1[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-08-21 18:42:31[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-08-27 18:42:31[39m[32m"[39m,
+        [34mpublicado[39m: [35m1[39m,
+      },
+    ],
+  }
