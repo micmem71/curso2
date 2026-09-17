@@ -359,6 +359,17 @@ En un sistema en producción con más de cien modelos, la carpeta `tests/` tiene
 
 La suite se corre en cada cambio antes de integrarlo. Ese es el punto de todo esto: no es un ejercicio escolar, es lo que permite que varias personas toquen el mismo sistema sin romperse el trabajo entre ellas.
 
+Antes de probar el envío, ejecuta las migraciones y crea los usuarios de práctica:
+
+```bash
+php artisan migrate
+php artisan db:seed --class=UsuariosDePracticaSeeder
+```
+
+La primera agrega las dos columnas a `posts`. La segunda crea ocho usuarios de práctica: a más destinatarios, más tarda el envío y mejor se ve la cola.
+
+Deja corriendo `composer run dev`. Uno de sus cuatro procesos es `php artisan queue:listen`: el **worker**, que espera trabajos y los ejecuta. Lleva ahí desde la sesión 1.
+
 ---
 
 ## Glosario
